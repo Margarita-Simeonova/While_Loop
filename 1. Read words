@@ -1,0 +1,10 @@
+def read_words(text):
+    
+    while not text == "Stop":
+        print(text)
+        
+        text = input()
+  
+
+text_arg = input()
+read_words(text_arg)

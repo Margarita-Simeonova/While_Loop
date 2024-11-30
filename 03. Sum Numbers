@@ -1,18 +1,17 @@
-def sum_numbers(cotrol_number, number):
-    sum_of_numbers = 0
-    
-    while not sum_of_numbers >= cotrol_number:
-        if sum_of_numbers > cotrol_number:
-            break
-        
-        sum_of_numbers += number
+def sum_numbers(control_number):
+    try:
         number = int(input())
-    
-    return sum_of_numbers
-    
-    
-control_number_arg = int(input())
-number_arg = int(input())
+        sum_numbs = number
 
-result = sum_numbers(control_number_arg, number_arg)
-print(result)
+        while sum_numbs < control_number:
+            number = int(input())
+            sum_numbs += number
+
+        return sum_numbs
+    except KeyboardInterrupt:
+
+        return sum_numbs
+
+
+number = int(input())
+print(sum_numbers(number))
